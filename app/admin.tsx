@@ -259,12 +259,12 @@ router.replace('/login');
         </TouchableOpacity>
 
 
-        <View style={styles.moduleCard}>
+        <TouchableOpacity style={styles.moduleCard}onPress={() => router.push('/admin/reports')}>
           <Text style={styles.moduleTitle}>Reports</Text>
           <Text style={styles.moduleDescription}>
             View attendance summaries and system totals.
           </Text>
-        </View>
+        </TouchableOpacity >
 
         <Text style={styles.footer}>
           QR-ATT · Administrator Panel
